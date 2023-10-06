@@ -4,4 +4,3 @@ function getRandomNumber() {
 
 const randomNumber = getRandomNumber();
 
-// console.log(randomNumber);

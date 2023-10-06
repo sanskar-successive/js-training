@@ -7,4 +7,3 @@ function isEven(num){
 
 const evenFound = isEven(9);
 
-// console.log(evenFound);
