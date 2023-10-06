@@ -2,5 +2,6 @@ function getSquare(num) {
   return num * num;
 }
 
-// console.log(getSquare(5));
+const squaredValue = getSquare(5);
+
 
