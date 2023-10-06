@@ -5,5 +5,6 @@ function isEven(num){
     return true;
 }
 
-// console.log(isEven(9));
-// console.log(isEven(10));
+const evenFound = isEven(9);
+
+// console.log(evenFound);

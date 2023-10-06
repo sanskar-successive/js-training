@@ -7,4 +7,6 @@ function outer_function(arg_function) {
 
 }
 
-// console.log(outer_function(arg_function));
+const output = outer_function(arg_function);
+
+// console.log((output))

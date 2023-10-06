@@ -8,7 +8,9 @@ const outer_function = (arg_function) => {
   return "function as an " + arg_function();
 };
 
-// console.log(outer_function(arg_function));
+const output = outer_function(arg_function);
+
+// console.log((output))
 
 
 
@@ -20,7 +22,9 @@ const getSquare = (num) => {
   return num * num;
 };
 
-// console.log(getSquare(4));
+const squaredValue = getSquare(5);
+
+// console.log(squaredValue);
 
 
 
@@ -32,7 +36,9 @@ const getSum = (num1, num2) => {
   return num1 + num2;
 };
 
-// console.log(getSum(4,6));
+const sum = getSum(3,5);
+
+// console.log(sum);
 
 
 
@@ -45,4 +51,6 @@ const isEven = (num) => {
   return true;
 };
 
-// console.log(isEven(9));
+const evenFound = isEven(9);
+
+// console.log(evenFound);

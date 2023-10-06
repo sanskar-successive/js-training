@@ -2,4 +2,6 @@ function getSum(num1, num2){
     return num1+num2;
 }
 
-// console.log(getSum(3,5));
+const sum = getSum(3,5);
+
+// console.log(sum);
