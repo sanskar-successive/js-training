@@ -1,3 +1,6 @@
+// 1. Write a program to perform functionality of a calculator (add,sub,multiply,divide)
+
+
 const add = (num1, num2) => num1 + num2;
 
 const subtract = (num1, num2) => num1 - num2;
@@ -34,9 +37,23 @@ function calculate(num1, num2, operator) {
   }
 }
 
-// console.log(calculate(4, 5, "+"));
-// console.log(calculate(4, 5, "-"));
-// console.log(calculate(4, 5, "*"));
-// console.log(calculate(4, 5, "/"));
-// console.log(calculate(4, 0, "/"));
-// console.log(calculate(4, 5, "#"));
+let calculatedValue;
+calculatedValue = calculate(4, 5, "-");
+// console.log(calculatedValue);
+
+calculatedValue = calculate(4, 5, "*");
+// console.log(calculatedValue);
+
+calculatedValue = calculate(4, 5, "/");
+// console.log(calculatedValue);
+
+calculatedValue = calculate(4, 0, "/");
+// console.log(calculatedValue);
+
+calculatedValue = calculate(4, 5, "+");
+// console.log(calculatedValue);
+
+calculatedValue = calculate(4, 5, "#");
+// console.log(calculatedValue);
+
+

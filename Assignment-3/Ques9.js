@@ -1,3 +1,7 @@
+// 9. Write a program to print fibonaaci series
+
+
+
 function printFibonacciSeries(n) {
   if (n === 1) {
     console.log(0);

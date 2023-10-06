@@ -1,3 +1,6 @@
+// 3. Write a program to display Diamond Pattern
+
+
 function printDiamondPattern(n) {
   let row;
 

@@ -1,3 +1,7 @@
+// 5. Write a program to print all even number first and then all odd numbers using only one iteration
+
+
+
 function print_even_then_odd_single_iteration(n) {
   let odd = "";
   let even = "";
@@ -14,4 +18,6 @@ function print_even_then_odd_single_iteration(n) {
   return odd + even;
 }
 
-// console.log(print_even_then_odd_single_iteration(15));
+const printEvenOdd = print_even_then_odd_single_iteration(15);
+
+// console.log(printEvenOdd);
