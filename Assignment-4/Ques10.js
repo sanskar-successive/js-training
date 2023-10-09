@@ -1,19 +1,30 @@
-const convert2Dto1D = (array2D) => {
-  let concatenatedArray = [];
+const flatArray = (arr) => {
+  let flattenArray = [];
 
-  array2D.forEach((arr) => {
-    arr.forEach((element) => {
-      concatenatedArray.push(element);
-    });
-  });
+  
+  for(const element of arr){
 
-  return concatenatedArray;
+    if(typeof(element) === 'object'){
+      const innerArr = flatArray(element);
+
+      for(const innerElement of innerArr){
+        flattenArray.push(innerElement)
+      }
+    }
+    else{
+      flattenArray.push(element);
+    }
+  }
+
+  return flattenArray;
 };
 
-const array2D = [
+const arr = [
   [1, 2, "str"],
   [4, "5767", 6],
-  [7, 8, 9],
+  [7, 8, [9,10, [11,"hhgd"]]],
 ];
 
-const concatenatedArray = convert2Dto1D(array2D);
+const flattenArray = flatArray(arr);
+
+

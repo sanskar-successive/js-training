@@ -1,12 +1,12 @@
 const inverseArray = (arr) => {
 
-  arr.forEach((element, index) => {
+  const inverse = [];
 
-    [element, arr[index]] = [arr[index], element];
-  })
+  for(let i=0;i<arr.length;i++) inverse[arr[i]] = i;
 
-  return arr;
+  return inverse;
 }
 
-const arrayInverse = inverseArray([1,2,0,4,5]);
-console.log(arrayInverse);
+const arrayInverse = inverseArray([1,2,3,0]);
+
+

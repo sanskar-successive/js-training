@@ -1,22 +1,16 @@
-// 8. Write a program to remove dupliacte elements from an array
-
-
 
 const removeDuplicateElements = (arr) => {
-  const uniqueSet = new Set();
+  
+  const unique = [];
 
-  arr.forEach((element) => {
-    uniqueSet.add(element);
+  arr.forEach(element => {
+    if(unique.includes(element)===false) unique.push(element);
   });
 
-  const uniqueArray = [];
-
-  uniqueSet.forEach((element) => uniqueArray.push(element));
-  return uniqueArray;
+  return unique;
 };
 
 const uniqueElements = removeDuplicateElements([
   7, 8, 1, 2, 3, 4, 1, 2, 3, 4, 4, 5, 6, 5,
 ]);
 
-console.log(uniqueElements);

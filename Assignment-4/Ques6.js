@@ -1,4 +1,3 @@
-// 6. Write a program to find sum of an array
 
 const findSumOfArray = (arr) => {
   let sum = 0;
@@ -13,4 +12,3 @@ const findSumOfArray = (arr) => {
 const arr = [1, 2, 3, 4, 5, 6];
 const arraySum = findSumOfArray(arr);
 
-console.log(arraySum);

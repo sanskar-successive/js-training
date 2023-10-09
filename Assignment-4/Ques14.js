@@ -12,3 +12,4 @@ const arrayReverse = (arr) => {
 };
 
 const reversedArray = arrayReverse([1, 2, 3, 4, 5]);
+

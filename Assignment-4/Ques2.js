@@ -1,4 +1,3 @@
-// 2.Write a program to reverse a string ("Hello John" => "olleH nhoJ")
 
 const reverseString = (str) => {
   const words = str.split(" ");
@@ -17,4 +16,7 @@ const reverseString = (str) => {
   return reversedString;
 };
 
-console.log(reverseString("Learning Javascript"));
+const reverse = reverseString("Learning Javascript");
+
+
+

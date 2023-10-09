@@ -1,4 +1,3 @@
-// 7. Write a program to find index of duplicate elements in an array
 
 const indexOfDuplicateElements = (arr) => {
   const map = new Map();
@@ -18,11 +17,12 @@ const indexOfDuplicateElements = (arr) => {
     }
   });
 
-  return map;
+  return [...map.entries()];
 };
 
 const duplicateIndices = indexOfDuplicateElements([
   7, 8, 1, 2, 3, 4, 1, 2, 3, 4, 4, 5, 6, 5,
 ]);
 
-console.log(duplicateIndices);
+
+
