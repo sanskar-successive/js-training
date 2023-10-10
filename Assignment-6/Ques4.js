@@ -24,9 +24,4 @@ class Person{
 const person = new Person('Donald', 'Trump', 73);
 
 
-console.log(person.fullName());
-
 const arr = [{...new Person('abc', 'def', 10)}, {...new Person('ghi', 'jkl', 17)}, {...new Person('mno', 'pqr', 21)}];
-
-console.log(Person.averageAge(arr))
-

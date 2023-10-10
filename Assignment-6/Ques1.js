@@ -17,12 +17,7 @@ class BankAccount {
 
 const acc1 = new BankAccount(100, "Sanskar");
 
-console.log(acc1.displayBalance());
-
 acc1.deposit(100);
-
-console.log(acc1.displayBalance());
 
 acc1.withdraw(50);
 
-console.log(acc1.displayBalance());

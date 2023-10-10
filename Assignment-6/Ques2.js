@@ -31,12 +31,7 @@ class Rectangle extends Shape{
 }
 
 const shape = new Shape(6,7);
-console.log(shape.getArea());
 
 const triangle = new Triangle(3,8);
 
-console.log(triangle.getArea());
-
 const rectangle = new Rectangle(4,5);
-
-console.log(rectangle.getArea())
