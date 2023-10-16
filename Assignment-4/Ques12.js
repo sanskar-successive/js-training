@@ -21,7 +21,6 @@ const intersectionArray = (arr1,arr2) => {
     while(i < arr1.length && j < arr2.length){
 
         if(arr1[i] < arr2[j]){
-
             i++;
         }
         else if(arr1[i] > arr2[j]){
@@ -41,5 +40,6 @@ const arr1 = [6,7,8,8,1,1,1,2,2,3,4];
 const arr2 = [9,9,8,7,1,1,2,4,5,6];
 
 const intersectionElements = intersectionArray(arr1,arr2);
+
 
 

@@ -1,3 +1,5 @@
+// 4. Write a program deepClone that takes an object as input and returns a deep copy of that object. The function should handle nested objects and arrays.
+
 const deepClone = (obj) => {
   const deepCloneObj = { ...obj };
   return deepCloneObj;

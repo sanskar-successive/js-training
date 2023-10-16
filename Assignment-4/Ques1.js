@@ -5,7 +5,7 @@ const removeDuplicates = (str) => {
   let noDuplicateString = "";
 
   for (let i = 0; i < str.length; i++) {
-    if (uniqueElements.has(str[i])===false) {
+    if (!uniqueElements.has(str[i])) {
       uniqueElements.add(str[i]);
       noDuplicateString += str[i];
     } 
@@ -16,5 +16,6 @@ const removeDuplicates = (str) => {
 
 
 const noDuplicateString = removeDuplicates("klsadgsdjsadkjl hdqkhedkj");
+
 
 
