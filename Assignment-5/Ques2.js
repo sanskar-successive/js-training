@@ -1,3 +1,5 @@
+// 2. Write a program to sort an array of object on the basis of age ({name:"John", age:26})
+
 const arraySort = (employees) => {
   employees.sort((i, j) => {
     if (i.age > j.age) return 1;
