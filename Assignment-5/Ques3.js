@@ -1,9 +1,7 @@
 const removeIdKey = (employees) => {
-
     employees.forEach(element => {
         delete(element.id)
     });
-
     return employees;
 }
 
@@ -14,14 +12,12 @@ const employees = [
       age: 27,
       id : 1
     },
-  
     {
       firstName: "Ana",
       lastName: "Rosy",
       age: 25,
       id : 2
     },
-  
     {
       firstName: "Zion",
       lastName: "Albert",
@@ -31,5 +27,5 @@ const employees = [
   ];
 
   const filterdArray = removeIdKey(employees);
-
+ 
   
