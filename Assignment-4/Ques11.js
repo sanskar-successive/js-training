@@ -11,4 +11,3 @@ const bubbleSort = (arr) => {
 const arr = [2, 5, 7, 1, 3, 9];
 const sortedArray = bubbleSort(arr);
 
-
