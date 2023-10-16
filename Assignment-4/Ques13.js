@@ -1,10 +1,6 @@
+
 const inverseArray = (arr) => {
-
-  const inverse = [];
-
-  for(let i=0;i<arr.length;i++) inverse[arr[i]] = i;
-
-  return inverse;
+  return arr.map((item,index)=>arr.indexOf(index))
 }
 
 const arrayInverse = inverseArray([1,2,3,0]);

@@ -4,7 +4,7 @@ const removeDuplicateElements = (arr) => {
   const unique = [];
 
   arr.forEach(element => {
-    if(unique.includes(element)===false) unique.push(element);
+    if(!unique.includes(element)) unique.push(element);
   });
 
   return unique;
