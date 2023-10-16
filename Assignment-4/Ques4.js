@@ -30,3 +30,4 @@ const convertToLowerCase = (str) => {
 const lowerCaseString = convertToLowerCase("HGDGHDhjdsh");
 
 const upperCaseString = convertToUpperCase("HGDGHDhjdsh");
+

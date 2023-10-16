@@ -13,10 +13,10 @@ const lastDuplicateIndex = (arr) => {
     if (value === -1) map.delete(key);
   });
 
-  return [...map.entries()];
+  return map;
 };
 
 
 const lastDuplicateIndices = lastDuplicateIndex([
-  7, 8, 1, 2, 3, 4, 1, 2, 3, 4, 4, 5, 6, 5,
+  1,2,3,2,4,5,3,6,7,5
 ]);
