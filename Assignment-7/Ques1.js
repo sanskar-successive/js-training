@@ -1,3 +1,5 @@
+// 1. Give an example of using a callback function to handle an asynchronous operation in JavaScript (Use any open api to make a call)
+
 function fetchDataUsingCallbackBasedAPI(userId, callback){
   const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
   const promise = fetch(apiUrl);

@@ -1,16 +1,12 @@
+// 3. Convert a callback-based API to a Promise-based API 
 
 function fetchDataUsingPromiseBasedAPI(userId){
-
   const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
   const promise = fetch(apiUrl);
-
   return promise.then((response)=>{
     return response.json();
   })
-  
-
 }
-
 
 fetchDataUsingPromiseBasedAPI(1)
 .then((userData) => {
@@ -20,13 +16,9 @@ fetchDataUsingPromiseBasedAPI(1)
   console.error(error)
 })
 
-
-
-
 function fetchDataUsingCallbackBasedAPI(userId, callback){
   const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
   const promise = fetch(apiUrl);
-
   promise
   .then((response)=>{
     return response.json();

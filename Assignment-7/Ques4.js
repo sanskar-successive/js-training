@@ -1,3 +1,5 @@
+
+// 4. Write a program to implement a Promise-based rate limiter, that limits the number of concurrent requests to a certain number.
 class RateLimiter{
   constructor(limit){
     this.limit = limit;
@@ -5,9 +7,7 @@ class RateLimiter{
     this.activeRequests = 0;
   }
 
-
   async addToPending(requestFunction){
-
     return new Promise(async (resolve, reject) => {
       if(this.activeRequests < this.limit){
         this.executeRequest(requestFunction, resolve, reject);
@@ -29,8 +29,6 @@ class RateLimiter{
     }
     finally{
       this.activeRequests--;
-
-
       if(this.pending.length > 0){
         const nextRequest = this.pending.shift();
         this.executeRequest(nextRequest.requestFunction, nextRequest.resolve, nextRequest.reject);
