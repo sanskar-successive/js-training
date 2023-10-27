@@ -29,14 +29,11 @@ const resolveAllAsyncFuncs = async () => {
   const asyncRes1 = asyncFunc1();
   const asyncRes2 = asyncFunc2();
   const asyncRes3 = asyncFunc3();
-
   const result = await Promise.all([asyncRes1, asyncRes2, asyncRes3]);
-
   return result;
 };
 
 const promise = resolveAllAsyncFuncs();
-console.log(promise)
 
 promise
   .then((result) => {
