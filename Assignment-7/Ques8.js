@@ -11,7 +11,7 @@ async function fetchFirstAPIData(){
 async function fetchSecondAPIData(){
     const apiUrl = `https://jsonplaceholder.typicode.com/todos/1`;
     const response = await fetch(apiUrl);
-    const data = response.json();
+    const data = await response.json();
     return data;
 }
 
